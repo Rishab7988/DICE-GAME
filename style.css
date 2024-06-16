@@ -8,36 +8,39 @@ body{
     background-color: rgb(39, 58, 74);
 }
 
-.first{
+.first p{
     font-family: sans-serif;
     color: rgb(28, 225, 120);
-    margin: auto;
-    max-width: 70vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40vh;
+    text-align: center;
     font-size: 80px;
+    margin-top: 50px;
+    
 }
 
 .second{
-    max-width: 30vw;
-    margin: auto;
+    max-width: 80vw;
+    margin: 50px auto;
     /* border: 2px solid black; */
-    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    /* width: 100%; */
+    column-gap: 40px;
+    padding: 20px;
 }
 
 
 .players{
-    display: flex;
     font-family: sans-serif;
     color: rgb(28, 225, 120);
     font-size: 32px;
-    max-width: 30vw;
-    margin: auto;
-    justify-content: space-evenly;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.players p{
     padding-bottom: 20px;
 }
+
 
 .box{
     display: flex;
@@ -69,10 +72,28 @@ body{
     color: black;
 }
 
-/* .dice :nth-child(3){
-    display: none;
-} */
 
+/* Responsiveness */
+@media only screen and (max-width: 720px) {
+    .first p{
+        font-size: 40px;
+    }
+
+    .dice{
+        height: 150px;
+        width: 150px;
+    }
+
+    .num{
+        height: 40px;
+        width: 40px;
+    }
+
+    .second{
+        max-width: 100vw;
+        margin: auto;
+    }
+}
 
 
 
